@@ -1,36 +1,18 @@
 package com.udacity.gradle.builditbigger;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.TextView;
-
-import com.adonisarifi.androidlibraryjokes.MainActivityLib;
-import com.javalibrary.JokeClass;
-
-import butterknife.Bind;
-import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 
-public class MainActivity extends AppCompatActivity {
-
-    @Bind(R.id.instructions_text_view)
-    TextView instructions_text_view;
-    @Bind(R.id.button_telljoke)
-    Button button_telljoke;
-
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.bind(this);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -53,25 +35,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-/*
-    public void tellJoke(View view){
-*//*
-            Intent myIntent = new Intent(this, MainActivityLib.class);
-            startActivity(myIntent);*//*
-
-        JokeClass jokeClass = new JokeClass();
-        instructions_text_view.setText(jokeClass.getRandomJoke());
-
-    }*/
-
-    @OnClick(R.id.button_telljoke)
-    public void setOnClick_button_telljoke() {
-      Intent myIntent = new Intent(this, MainActivityLib.class);
-        startActivity(myIntent);
-        JokeClass jokeClass = new JokeClass();
-        instructions_text_view.setText(jokeClass.getRandomJoke());
-
-    }
-
 
 }

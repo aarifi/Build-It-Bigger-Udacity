@@ -2,11 +2,12 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.1"
 
     defaultConfig {
+        applicationId "com.udacity.gradle.builditbigger"
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
@@ -16,14 +17,29 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    productFlavors {
+        freeFlavour {
+            applicationId "com.udacity.gradle.builditbigger.freeFlavour"
+        }
+        paidFlavour {
+            applicationId "com.udacity.gradle.builditbigger.paidFlavour"
+        }
+    }
 }
+
+
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:22.1.1'
     // Added for AdMob
-    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile project(':androidlib')
+    compile project(':javalib')
+    compile project(path: ':jokebackend', configuration: 'android-endpoints')
     compile 'com.jakewharton:butterknife:7.0.1'
-    compile project(':libjavajokes')
-    compile project(':libandroidjokes')
+
 }

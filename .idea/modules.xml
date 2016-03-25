@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Build It Bigger.iml" filepath="$PROJECT_DIR$/Build It Bigger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinalProject Build It Bigger.iml" filepath="$PROJECT_DIR$/FinalProject Build It Bigger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidlib/androidlib.iml" filepath="$PROJECT_DIR$/androidlib/androidlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/backend/backend.iml" filepath="$PROJECT_DIR$/backend/backend.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libandroidjokes/libandroidjokes.iml" filepath="$PROJECT_DIR$/libandroidjokes/libandroidjokes.iml" />
-      <module fileurl="file://$PROJECT_DIR$/libjavajokes/libjavajokes.iml" filepath="$PROJECT_DIR$/libjavajokes/libjavajokes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javalib/javalib.iml" filepath="$PROJECT_DIR$/javalib/javalib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jokebackend/jokebackend.iml" filepath="$PROJECT_DIR$/jokebackend/jokebackend.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">androidlib</string>
+    <string name="joke">Fragment Joke</string>
+    <string name="action_settings">Settings</string>
+</resources>
