@@ -15,20 +15,24 @@
         android:text="@string/instructions" />
 
     <Button
+        android:id="@+id/button_tell_joke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/button_margin_top"
         android:layout_below="@+id/instructions_text_view"
-       android:id="@+id/button_tell_joke"
         android:text="@string/button_text"
 
         />
+
 
     <ProgressBar
         android:id="@+id/progress_bar_joke"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"
-        android:visibility="gone" />
+        android:visibility="gone"
+        />
 
 </RelativeLayout>
