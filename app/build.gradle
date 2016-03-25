@@ -16,6 +16,16 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
+        shrunk{
+            minifyEnabled true
+            shrinkResources true
+        }
+
+        big{
+            minifyEnabled false
+            shrinkResources false
+        }
     }
 
     productFlavors {
@@ -35,11 +45,14 @@ dependencies {
     // Added for AdMob
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.google.android.gms:play-services:8.4.0'
-    compile 'com.google.android.gms:play-services-ads:8.4.0'
+
     compile 'com.google.android.gms:play-services-gcm:8.4.0'
     compile project(':androidlib')
     compile project(':javalib')
     compile project(path: ':jokebackend', configuration: 'android-endpoints')
     compile 'com.jakewharton:butterknife:7.0.1'
+
+    // Added for AdMob
+    freeFlavourCompile 'com.google.android.gms:play-services-ads:8.4.0'
 
 }
