@@ -1,5 +1,7 @@
 # Gradle for Android and Java Final Project
 
+https://lh3.googleusercontent.com/cJQtO_A08shKWZ1NEJxpvdYcfXxoHH87HYldIx_gOoGcoqnnZDTP3ycVqAnZSUMYzHygxhb-nEE_Yv_QmZY=s0#w=1920&h=1080
+
 In this project, you will create an app with multiple flavors that uses
 multiple libraries and Google Could Endpoints. The finished app will consist
 of four modules. A Java library that provides jokes, a Google Could Endpoints
