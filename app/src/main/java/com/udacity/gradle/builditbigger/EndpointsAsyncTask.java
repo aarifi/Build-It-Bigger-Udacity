@@ -19,6 +19,7 @@ public class EndpointsAsyncTask extends AsyncTask<JokeListener, Void, String> {
 
 
 
+
     @Override
     protected String doInBackground(JokeListener... params) {
         if (myApi == null) {  // Only do this once
